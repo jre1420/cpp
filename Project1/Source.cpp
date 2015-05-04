@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-
+  //open text file
 	ifstream inputFile;
 	inputFile.open("C:\\Users\\Jonathan\\Desktop\\CS1\\People.txt");
 
@@ -16,6 +16,7 @@ int main()
 	cout << "PRAIRIEVILLE POPULATION GROWTH" << "\n";
 	cout << "(each * represents 1000 people)" << "\n";
 
+  //loop displaying years
 	for (year = 1900; year <= 2000; year += 20)
 	{
 		
@@ -26,6 +27,7 @@ int main()
 
 		cout << year << " ";
 		
+  //loop to display chart
 		for (star = 1; star <= population; star++)
 			cout << "*";
 

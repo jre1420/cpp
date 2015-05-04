@@ -26,13 +26,14 @@ int main()
 	return 0;
 }
 
-
+// get score from user
 void getScore(int &score)
 {
 
 	cout << "Enter a test score: ";
 	cin >> score;
-	
+
+//validate score is between 1 and 100
 	while (score < 1 || score > 100)
 	{
 		cout << "Please enter a valid test score between 1 and 100!: ";
@@ -42,7 +43,7 @@ void getScore(int &score)
 }
 
 
-
+//get average minus the lowest score
 void calcAverage(int s1, int s2, int s3, int s4, int s5)
 {
 	int sum;
@@ -60,7 +61,7 @@ void calcAverage(int s1, int s2, int s3, int s4, int s5)
 }
 
 
-
+//find lowest score
 int findLowest(int s1, int s2, int s3, int s4, int s5)
 {
 	int lowest = s1;

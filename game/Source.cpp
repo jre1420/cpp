@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <cstdlib>
 #include <time.h>
 using namespace std;
@@ -10,8 +11,14 @@ int main(){
   //random number and guess
 	int num = rand() % 100 + 1;
 	int guess = 0;
+	string name = "";
 
-	cout << "This is a little game where you try to guess a number between 1 and 100." << endl;
+ //Get users name
+	cout << "Enter your first name: ";
+	cin >> name;
+	cout << endl;
+ // welcome message
+	cout << "Welcome " << name << " I am thinking of a number between 1 and 100." << endl << endl;
 	
 
 	cout << "Try and guess the number. Good Luck! Pick a number between 1 and 100: ";
